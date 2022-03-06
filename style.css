@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --white: #ffffff;
     --white1: #f8f8f8;
@@ -85,3 +86,92 @@ main form .button_index{
 }
 
 
+=======
+:root {
+    --white: #ffffff;
+    --white1: #f8f8f8;
+    --white2: #f0f0f0; 
+    --white3: #e4e4e4;
+    --black: #030708;
+    --black1: #080808;
+    --black2: #141414;
+    --black3: #1c1c1c;
+    --dark--gray: #746f6b;
+    --light--gray: #c6c2b9;
+    --text--input--field: #f5f3f4;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: var(--black1);
+    color: var(--text--input--field);
+
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+header .logo{
+    width: 150px;
+    height: auto;
+    margin: 100px 0 70px;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+main form {
+    display: flex;
+    width: 90%;
+    padding: 10%;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+main form label {
+    font-size: var(--md);
+    line-height: 3.6rem;
+}
+
+main form input {
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    height: 35px;
+    background-color: var(--white1);
+    font-size: var(--md);
+}
+
+main form .button_index{
+    background-color: var(--black3);
+    color: var(--text--input--field);
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 18px;
+}
+
+
+>>>>>>> 9f5e8deed6116c5dc76f778f1a58feb141989a2d
