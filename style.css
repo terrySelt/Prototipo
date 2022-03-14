@@ -1,16 +1,26 @@
 :root {
-    --white: #ffffff;
-    --white1: #f8f8f8;
-    --white2: #f0f0f0; 
-    --white3: #e4e4e4;
-    --black: #030708;
-    --black1: #101010;
-    --black2: #141414;
-    --black3: #1c1c1c;
-    --black4: #353535;
-    --dark--gray: #746f6b;
-    --light--gray: #c6c2b9;
+    /*Paleta de colores claros*/
+    --white--l: #ffffff;
+    --dark--gray--l: #746f6b;
+    --light--gray--l: #c6c2b9;
     --text--input--field: #f5f3f4;
+    --text--input--field2: #f7f7f7;
+    --black--l: #030708;
+
+    /*paleta de colores oscuro*/
+    --white--d: #f8f8f8;
+    --black--d: #080808;
+    --light--gray--d: #6a6a6a;
+    --dark--gray--d: #393939;
+
+
+    /*Paleta de colores de Manjaro*/
+    --green--m: #34be5b;
+    --black--m: #111111;
+    --light--gray--m: #8c8c8c;
+    --white--m: #fcfefd;
+    --dark--gray--m: #444444; 
+
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
@@ -27,62 +37,131 @@ html {
     font-family: 'Quicksand', sans-serif;
 }
 
-body {
-    background-color: var(--black1);
-    color: var(--text--input--field);
-
-}
-
-header {
+/*index*/
+.index--body {
     display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-}
-
-header .logo{
-    width: 200px;
-    height: auto;
-    margin: 100px 0 70px;
-}
-
-main {
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-}
-
-main form {
-    display: flex;
-    width: 90%;
-    padding: 10%;
     flex-direction: column;
-    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 
-main form label {
-    font-size: var(--md);
-    line-height: 3.6rem;
+.index--logo {
+    width: 250px;
+    height: auto;
+    margin-bottom: 40px;
 }
 
-main form input {
+.index--main{
+    margin: 0 auto;
+    width: 260px;
+    height: auto;
+}
+
+.index--main form {
+    display: flex;
+    flex-direction: column;
+}
+
+.index--main form label {
+    font-size: var(--sm);
+    color: var(--black--l);
+    font-weight: bold;
+    margin-bottom: 4px;
+
+}
+
+.index--main form input {
+    background-color: var(--text--input--field);
+    font-size: var(md);
     border: none;
     border-radius: 8px;
     padding: 6px;
-    height: 35px;
-    background-color: var(--white1);
-    font-size: var(--md);
+    height: 40px;
+    margin-bottom: 12px;
 }
 
-main form .button_index{
-    background-color: var(--black3);
+.index--main .index--btn--primary {
+    background-color: var(--dark--gray--l);
     color: var(--text--input--field);
     font-weight: bold;
     height: 50px;
     cursor: pointer;
     width: 100%;
-    margin-top: 18px;
+    margin-top: 14px;
 }
 
 
+/*New--pass*/
+.new--pass--body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.new--pass--logo {
+    width: 250px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.new--pass--main {    
+    padding: 20px;
+}
+
+.new--pass--main--section--upper {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.new--pass--main--section--upper h1 {
+    font-size: var(--lg);
+}
+
+.new--pass--main--section--upper p {
+    font-size: var(--sm);
+    color: var(--dark--gray--l);
+}
+
+.new--pass--main--section--lower{
+    margin: 0 auto;
+    width: 260px;
+    height: auto;
+}
+
+.new--pass--main--section--lower form {
+    display: flex;
+    flex-direction: column;
+}
+
+.new--pass--main--section--lower form label {
+    font-size: var(--sm);
+    color: var(--black--l);
+    font-weight: bold;
+    margin-bottom: 4px;
+
+}
+
+.new--pass--main--section--lower form input {
+    background-color: var(--text--input--field);
+    font-size: var(md);
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    height: 40px;
+    margin-bottom: 12px;
+}
+
+.new--pass--main--section--lower .new--pass--btn--primary {
+    background-color: var(--dark--gray--l);
+    color: var(--text--input--field);
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 14px;
+}
