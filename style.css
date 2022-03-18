@@ -55,13 +55,22 @@ html {
 
 .index--main{
     margin: 0 auto;
-    width: 260px;
-    height: auto;
+    padding: 20px;
+}
+
+.index--main .message{
+    color: red;
+    font-size: var(--sm);
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .index--main form {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    width: 260px;
+    height: auto
 }
 
 .index--main form label {
@@ -83,7 +92,7 @@ html {
 }
 
 .index--main .index--btn--primary {
-    background-color: var(--dark--gray--l);
+    background-color: var(--dark--gray--d);
     color: var(--text--input--field);
     font-weight: bold;
     height: 50px;
