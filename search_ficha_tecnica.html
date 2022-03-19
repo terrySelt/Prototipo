@@ -13,9 +13,10 @@
 </head>
 <body class="search--ficha--body">
     <header class="search--ficha--header">
-        <i class="fas fa-bars search--ficha--i--menu"></i>
         <h2>Fichas Tecnicas</h2>
-        <nav style="display: none;">
+        <i class="fas fa-bars search--ficha--i--menu" id="search--ficha--i--menu" onclick="desplegar_menu()"></i>
+        <nav id="search--ficha--nav" style="display: none;">
+            <hr>
             <ul>
                 <li><a href="#">Fichas Tecnicas</a></li>
                 <li><a href="#">Computadoras</a></li>
@@ -34,5 +35,7 @@
             <input type="button" value="Escanear" class="search--ficha--btn--primary">
         </form>
     </main>
+    <div class="search--ficha--color-opaco" style="display: none;" id="search--ficha--color-opaco" onclick="desaparecer()"></div>
+    <script src="./main.js"></script>
 </body>
 </html>
