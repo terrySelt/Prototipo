@@ -204,12 +204,15 @@ html {
 }
 
 .search--ficha--main form{
+    position: relative;
     margin: 0 auto;
     width: 260px;
     height: auto;
 }
 
-
+.search--ficha--position{
+    position: relative;
+}
 
 .search--ficha--main form label {
     font-size: var(--sm);
@@ -220,7 +223,6 @@ html {
 }
 
 .search--ficha--main form input {
-    position: relative;
     background-color: var(--text--input--field);
     font-size: var(md);
     border: none;
@@ -237,8 +239,9 @@ html {
 .search--ficha--i--search {
     position: absolute;
     font-size: 20px;
-    right: 12%;
-    top: 53%;
+    top: 10px;
+    right: 10px;
+
 }
 
 .search--ficha--main .search--ficha--btn--primary {
