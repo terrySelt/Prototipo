@@ -92,7 +92,7 @@ html {
 }
 
 .index--main .index--btn--primary {
-    background-color: var(--dark--gray--d);
+    background-color: var(--light--gray--l);
     color: var(--text--input--field);
     font-weight: bold;
     height: 50px;
@@ -166,6 +166,82 @@ html {
 }
 
 .new--pass--main--section--lower .new--pass--btn--primary {
+    background-color: var(--dark--gray--l);
+    color: var(--text--input--field);
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 14px;
+}
+
+/* Search ficha*/
+
+.search--ficha--header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--dark--gray--m);
+    color: var(--text--input--field);
+}
+
+.search--ficha--i--menu {
+    font-size: 30px;
+}
+
+.search--ficha--header h2 {
+    align-self: center;
+    font-size: var(--lg);
+}
+
+.search--ficha--main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+
+.search--ficha--main form{
+    margin: 0 auto;
+    width: 260px;
+    height: auto;
+}
+
+
+
+.search--ficha--main form label {
+    font-size: var(--sm);
+    color: var(--black--l);
+    font-weight: bold;
+    margin-bottom: 4px;
+
+}
+
+.search--ficha--main form input {
+    position: relative;
+    background-color: var(--text--input--field);
+    font-size: var(md);
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    height: 40px;
+    margin-bottom: 12px;
+}
+
+.search--ficha--input--codigo {
+    width: 77%;
+}
+
+.search--ficha--i--search {
+    position: absolute;
+    font-size: 20px;
+    right: 40px;
+    top: 290px;
+}
+
+.search--ficha--main .search--ficha--btn--primary {
     background-color: var(--dark--gray--l);
     color: var(--text--input--field);
     font-weight: bold;
