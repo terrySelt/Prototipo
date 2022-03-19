@@ -237,8 +237,8 @@ html {
 .search--ficha--i--search {
     position: absolute;
     font-size: 20px;
-    right: 40px;
-    top: 290px;
+    right: 12%;
+    top: 53%;
 }
 
 .search--ficha--main .search--ficha--btn--primary {
