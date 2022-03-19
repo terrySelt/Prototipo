@@ -204,13 +204,12 @@ html {
 }
 
 .search--ficha--main form{
-    position: relative;
     margin: 0 auto;
     width: 260px;
     height: auto;
 }
 
-.search--ficha--position{
+.search--ficha--position {
     position: relative;
 }
 
