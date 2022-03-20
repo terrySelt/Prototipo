@@ -212,7 +212,7 @@ a {
     font-size: 30px;
 }
 
-.search--ficha--header nav {
+.search--ficha--nav {
     display: none;
     font-size: var(--md);
     font-weight: bold;
@@ -231,7 +231,7 @@ a {
 }
 
 
-.search--ficha--nav, .icon {
+.search--ficha--nav .icon {
     margin-right: 20px;
 }
 
@@ -331,11 +331,7 @@ hr {
         margin-top: 30px;
     }
 
-    .search--ficha--nav, .icon {
-        display: none;
-    }
-
-    .search--ficha--header nav {
+    .search--ficha--nav{
         display: block;
         background-color: var(--dark--gray--m);
         font-size: var(--md);
@@ -348,6 +344,10 @@ hr {
         padding: 0;
     }
 
+    .search--ficha--nav .icon{
+        display: none;
+    }
+
     .search--ficha--header nav ul {
         display: flex;
         justify-content: center;
@@ -355,9 +355,5 @@ hr {
 
     .search--ficha--header nav ul li {
         margin: 15px;
-    }
-
-    .search--ficha--color-opaco {
-        display: none;
     }
 }

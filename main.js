@@ -23,23 +23,20 @@ function next(){
 //funciones del search_ficha_tecnica
 
 function desplegar_menu(){
+
     var nav = document.getElementById("search--ficha--nav")
     var opaco = document.getElementById("search--ficha--color-opaco")
+    var menu = window.getComputedStyle(nav).display
 
-    if(nav.style.display==="none"){
+    if(menu ==='none'){
         nav.style.display="block"
-        opaco.style.display="block"
+        opaco.style="block"
     }
+
     else{
-        desaparecer()
+        nav.style.display="none"
+        opaco.style.display="none"
     }
 }
 
-function desaparecer(){
-    var nav = document.getElementById("search--ficha--nav")
-    var opaco = document.getElementById("search--ficha--color-opaco")
-
-    nav.style.display="none"
-    opaco.style.display="none"
-}
 
