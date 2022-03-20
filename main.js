@@ -28,15 +28,36 @@ function desplegar_menu(){
     var opaco = document.getElementById("search--ficha--color-opaco")
     var menu = window.getComputedStyle(nav).display
 
-    if(menu ==='none'){
-        nav.style.display="block"
-        opaco.style="block"
+    if(menu === 'none'){
+        nav.style.display = "block"
+        opaco.style = "block"
     }
 
     else{
-        nav.style.display="none"
-        opaco.style.display="none"
+        nav.style.display = "none"
+        opaco.style.display = "none"
     }
+}
+
+function desplegar_qr(){
+
+    var div_qr = document.getElementById("search--ficha--slider--i--div")
+    var i_qr = document.getElementById("search--ficha--slider--i")
+    var div_qr_display = window.getComputedStyle(div_qr).display
+
+    if(div_qr_display === "none"){
+        div_qr.style.display = "block"
+        i_qr.style.display = "none"
+    }
+}
+
+function cerrar(){
+    
+    var div_qr = document.getElementById("search--ficha--slider--i--div")
+    var i_qr = document.getElementById("search--ficha--slider--i")
+    div_qr.style.display = "none"
+    i_qr.style.display = "block"
+    
 }
 
 
