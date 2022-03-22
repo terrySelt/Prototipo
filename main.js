@@ -52,9 +52,51 @@ function desplegar_qr(){
 }
 
 function cerrar(){
-    
+
     var div_qr = document.getElementById("search--ficha--slider--i--div")
     var i_qr = document.getElementById("search--ficha--slider--i")
+    div_qr.style.display = "none"
+    i_qr.style.display = "block"
+    
+}
+
+function desplegar_qr2(){
+
+    var div_qr = document.getElementById("search--ficha--slider--i--div2")
+    var i_qr = document.getElementById("search--ficha--slider--i2")
+    var div_qr_display = window.getComputedStyle(div_qr).display
+
+    if(div_qr_display === "none"){
+        div_qr.style.display = "block"
+        i_qr.style.display = "none"
+    }
+}
+
+function cerrar2(){
+
+    var div_qr = document.getElementById("search--ficha--slider--i--div2")
+    var i_qr = document.getElementById("search--ficha--slider--i2")
+    div_qr.style.display = "none"
+    i_qr.style.display = "block"
+    
+}
+
+function desplegar_qr3(){
+
+    var div_qr = document.getElementById("search--ficha--slider--i--div3")
+    var i_qr = document.getElementById("search--ficha--slider--i3")
+    var div_qr_display = window.getComputedStyle(div_qr).display
+
+    if(div_qr_display === "none"){
+        div_qr.style.display = "block"
+        i_qr.style.display = "none"
+    }
+}
+
+function cerrar3(){
+
+    var div_qr = document.getElementById("search--ficha--slider--i--div3")
+    var i_qr = document.getElementById("search--ficha--slider--i3")
     div_qr.style.display = "none"
     i_qr.style.display = "block"
     
