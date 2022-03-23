@@ -30,12 +30,20 @@ function desplegar_menu(){
 
     if(menu === 'none'){
         nav.style.display = "block"
-        opaco.style = "block"
+        opaco.style.display = "block"
     }
 
-    else{
+}
+
+function desaparecer(){
+    var div_opaco = document.getElementById("search--ficha--color-opaco")
+    var nav = document.getElementById("search--ficha--nav")
+    var opaco = window.getComputedStyle(div_opaco).display
+
+    if(opaco === "block"){
+        div_opaco.style.display = "none"
         nav.style.display = "none"
-        opaco.style.display = "none"
+        
     }
 }
 
