@@ -15,16 +15,16 @@
     <header class="new--maintenance--header">
         <nav>
             <ul>
-                <li><a href="#"><i class="fas fa-screwdriver"></i></a></li>
-                <li><a href="#"><i class="fas fa-cog"></i></a></li>
-                <li><a href="#"><i class="fas fa-bug"></i></a></li>
+                <li><a href="#preventivo"><i class="fas fa-screwdriver"></i></a></li>
+                <li><a href="#correctivo"><i class="fas fa-cog"></i></a></li>
+                <li><a href="#logico"><i class="fas fa-bug"></i></a></li>
                 <li><a href="#"><i class="fas fa-bug"></i></a></li>
                 <li><a href="#"><i class="fas fa-file-alt"></i></a></li>
             </ul>
         </nav>
     </header>
     <main class="new--maintenance--main">
-        <section class="preventivo">
+        <section class="preventivo" id="preventivo">
             <h2>Mantenimiento Preventivo</h2>
             <button class="new--maintenance--btn--primary" id="new--maintenance--btn--primary">Desarmado de equipo<i class="far fa-circle circle--i" id="circle--i"></i><i class="far fa-check-circle check--circle--i" id="check--circle--i"></i></button>
             <button class="new--maintenance--btn--primary" id="new--maintenance--btn--primary">Limpieza de Tarjeta Madre<i class="far fa-circle circle--i" id="circle--i"></i><i class="far fa-check-circle check--circle--i" id="check--circle--i"></i></button>
@@ -36,17 +36,29 @@
             <button class="new--maintenance--btn--primary" id="new--maintenance--btn--primary">Limpieza Coolers<i class="far fa-circle circle--i" id="circle--i"></i><i class="far fa-check-circle check--circle--i" id="check--circle--i"></i></button>
             <button class="new--maintenance--btn--primary" id="new--maintenance--btn--primary">Limpieza lector de DVD<i class="far fa-circle circle--i" id="circle--i"></i><i class="far fa-check-circle check--circle--i" id="check--circle--i"></i></button>
             <button class="new--maintenance--btn--primary" id="new--maintenance--btn--primary">Limpeza Tarjetas de Red<i class="far fa-circle circle--i" id="circle--i"></i><i class="far fa-check-circle check--circle--i" id="check--circle--i"></i></button>
-            <label for="verificacion">Verificacion de Equipo</label>
+            <label for="verificacion">Verificación de Equipo</label>
             <input type="text">
         </section>
-        <section class="correctivo">
-
+        <section class="correctivo" id="correctivo">
+            <h2>Mantenimiento Correctivo</h2>
+            <label for="causas">Causas</label>
+            <input type="text">
+            <label for="conclusion">Conclusión</label>
+            <input type="text">
         </section>
-        <section class="logico">
+        <section class="logico" id="logico">
+            <h2>Mantenimiento lógico</h2>
+            <button class="new--maintenance--btn--primary" id="new--maintenance--btn--primary">Instalación S.O.<i class="far fa-circle circle--i" id="circle--i"></i><i class="far fa-check-circle check--circle--i" id="check--circle--i"></i></button>
+            <button class="new--maintenance--btn--primary" id="new--maintenance--btn--primary">Instalación Office<i class="far fa-circle circle--i" id="circle--i"></i><i class="far fa-check-circle check--circle--i" id="check--circle--i"></i></button>
+            <button class="new--maintenance--btn--primary" id="new--maintenance--btn--primary">Instalación drivers<i class="far fa-circle circle--i" id="circle--i"></i><i class="far fa-check-circle check--circle--i" id="check--circle--i"></i></button>
+            <button class="new--maintenance--btn--primary" id="new--maintenance--btn--primary">Instalación de Utilitarios<i class="far fa-circle circle--i" id="circle--i"></i><i class="far fa-check-circle check--circle--i" id="check--circle--i"></i></button>
+            <button class="new--maintenance--btn--primary" id="new--maintenance--btn--primary">Instalalción de Antivirus<i class="far fa-circle circle--i" id="circle--i"></i><i class="far fa-check-circle check--circle--i" id="check--circle--i"></i></button>
+        </section>
+        <section class="carateristicas">
 
         </section>
         <section class="historial">
-
+            
         </section>
     </main>
     <script src="./main.js"></script>

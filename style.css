@@ -448,13 +448,26 @@ hr {
     height: 50px;
 }
 
+.new--maintenance--header nav ul li a i {
+    font-size: 15px;
+}
+
 .new--maintenance--main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     width: 100%;
     height: auto;
 }
+
+.new--maintenance--main section {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .new--maintenance--main h2 {
     margin-top: 20px;
@@ -467,7 +480,7 @@ hr {
     align-items: center;
     background-color: #f0f0f0;
     color: var(--dark--gray--d);
-    width: 280px;
+    width: 100%;
     height: 50px;
     cursor: pointer;
     border: none;
@@ -477,6 +490,27 @@ hr {
     font-weight: bold;
     font-size: var(--sm);
     margin-bottom: 1px;
+}
+
+.new--maintenance--main section label {
+    font-size: var(--sm);
+    color: var(--black--l);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.new--maintenance--main section input {
+    background-color: var(--text--input--field);
+    font-size: var(md);
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    height: 40px;
+    margin-bottom: 12px;
+}
+
+.logico {
+    margin-bottom: 60px;
 }
 
 .cambio {
