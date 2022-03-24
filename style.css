@@ -319,6 +319,7 @@ hr {
     border-radius: 6px;
 }
 
+
 .search--ficha--slider--i--div i {
     float: right;
     font-size: 25px;
@@ -333,7 +334,19 @@ hr {
     font-size: 20px;
     margin: 8px;
 }
+/*
+.search--ficha--slider--i--div--b {
+    display: block;
+}
 
+.prueba{
+    display:  block !important;
+}
+
+.search--ficha--slider--i--c {
+    display: none;
+}
+*/
 .search--ficha--slider--i--div img{
     display: block;
     width: 75%;
@@ -417,6 +430,75 @@ hr {
     cursor: pointer;
     width: 100%;
     margin-top: 14px;
+}
+
+/*new_maintenance*/
+.new--maintenance--header{
+    width: 100%;
+    height: auto;
+    background-color: var(--dark--gray--m);
+    position: fixed;
+    bottom: 0;
+}
+
+.new--maintenance--header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.new--maintenance--main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.new--maintenance--main h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.new--maintenance--btn--primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: var(--dark--gray--d);
+    width: 280px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: var(--sm);
+    margin-bottom: 1px;
+}
+
+.cambio {
+    background-color: #444444;
+    color: #f5f3f4;
+}
+
+.cambio--icon--circle {
+    display: none !important;
+}
+
+.cambio--icon--check{
+    display: block !important; 
+}
+
+.check--circle--i {
+    display: none;
+}
+
+.circle--i {
+    display: block;
+    color: #c6c2b9;
 }
 
 @media (min-width: 600px) {

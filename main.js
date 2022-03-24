@@ -109,5 +109,49 @@ function cerrar3(){
     i_qr.style.display = "block"
     
 }
+/*
+const buttons_close = document.querySelectorAll(".search--ficha--close--i--qr")
 
+const cambio_de_i = function(evento){
+    const div_previous = this.parentElement
+    const div_h3 = div_previous.nextElementSibling
+    const div_i = div_h3.nextElementSibling
+    div_previous.classList.toggle("search--ficha--slider--i--c")
+    div_i.classList.replace("search--ficha--slider--i--c","prueba")
+    console.log(div_i)
+}
+
+buttons_close.forEach(button_close => {
+    button_close.addEventListener("click", cambio_de_i)
+})
+const buttons_qr = document.querySelectorAll(".search--ficha--slider--i")
+
+const desplegar_qr = function(evento){
+    const div_qr = this.previousElementSibling //h3
+    const next = div_qr.previousElementSibling //div
+    const close_i = next.firstElementChild
+    next.classList.toggle("search--ficha--slider--i--div--b")
+    this.classList.toggle("search--ficha--slider--i--c")
+}
+
+buttons_qr.forEach(button_qr => {
+    button_qr.addEventListener("click", desplegar_qr)
+})
+*/
+ //funciones new_maintenance
+
+const buttons = document.querySelectorAll(".new--maintenance--btn--primary")
+
+const cambio_de_color = function(evento){
+
+    const circle = this.firstElementChild
+    const check = this.lastElementChild
+    this.classList.toggle("cambio")
+    circle.classList.toggle("cambio--icon--circle")
+    check.classList.toggle("cambio--icon--check")
+}
+
+buttons.forEach(button => {
+    button.addEventListener("click", cambio_de_color)
+})
 
