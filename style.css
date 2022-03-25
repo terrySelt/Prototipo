@@ -433,12 +433,14 @@ hr {
 }
 
 /*new_maintenance*/
+
+
 .new--maintenance--header{
+    position: fixed;
+    bottom: 0;
     width: 100%;
     height: auto;
     background-color: var(--dark--gray--m);
-    position: fixed;
-    bottom: 0;
 }
 
 .new--maintenance--header nav ul {
@@ -455,10 +457,12 @@ hr {
 .new--maintenance--main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     width: 100%;
-    height: auto;
+    height: 85vh;
+    overflow-y: scroll;
+    /*overscroll-behavior-y: contain;*/
+    margin-bottom: auto;
 }
 
 .new--maintenance--main section {
@@ -493,7 +497,10 @@ hr {
 }
 
 .new--maintenance--btn--primary--guardar {
+    position: fixed;
+    bottom: 55px;
     background-color: var(--dark--gray--m);
+    left: calc(50% - 128px);
     color: var(--text--input--field);
     width: 80%;
     height: 50px;
@@ -504,7 +511,6 @@ hr {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: var(--sm);
-    margin: 0 auto 60px auto;
 }
 
 .new--maintenance--main section label {
@@ -529,7 +535,7 @@ hr {
 }
 
 .logico {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .cambio {
