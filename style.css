@@ -443,14 +443,18 @@ hr {
     background-color: var(--dark--gray--m);
 }
 
-.new--maintenance--header nav ul {
+.new--maintenance--movile{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 50px;
 }
 
-.new--maintenance--header nav ul li a i {
+.new--maintenance--desktop {
+    display: none;
+}
+
+.new--maintenance--movile li a i {
     font-size: 15px;
 }
 
@@ -564,11 +568,9 @@ hr {
     color: #c6c2b9;
 }
 
-.display {
-    display: none;
-}
-
 @media (min-width: 600px) {
+
+    /*Search_ficha_tecnica*/
 
     .search--ficha--i--menu {
         display: none;
@@ -632,4 +634,67 @@ hr {
         margin-left: 3rem;
     }
 
+    /*New_manteinance*/
+
+    .new--maintenance--body {
+        display: grid;
+        grid-template-columns: 0.6fr 3.4fr;
+    }
+
+    .new--maintenance--header{
+        position: static;
+    }
+
+    .new--maintenance--header nav {
+        height: 100%;
+    }
+
+    .new--maintenance--desktop {
+        display: block;
+        height: 50vh;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .new--maintenance--desktop li{
+        margin-top: 20px;
+        
+    }
+
+    .new--maintenance--desktop li a {
+        font-size: var(--lg);
+    }
+
+    .new--maintenance--movile {
+        display: none;
+    }
+
+    .new--maintenance--header nav ul li {
+        
+    }
+
+    .new--maintenance--main {
+        width: 100%;
+        height: 100%;
+    }
+
+    .new--maintenance--container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .new--maintenance--container section h2 {
+        margin-top: 10px;
+    }
+
+    .new--maintenance--btn--primary--guardar {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        width: 200px;
+    }
 }

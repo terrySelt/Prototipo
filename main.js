@@ -184,3 +184,15 @@ labels_inputs.forEach(label_input => {
     }
 
 })
+
+const desktops_as = document.querySelectorAll(".new--maintenance--desktop--a")
+
+desktops_as.forEach(desktop_a => {
+    desktop_a.onblur = function(){
+        this.style.borderBottom = "none"
+    }
+
+    desktop_a.onfocus = function(){
+        this.style.borderBottom = "2px solid #f5f3f4"
+    }
+})
