@@ -146,7 +146,9 @@ const cambio_de_color = function(evento){
 
     const circle = this.firstElementChild
     const check = this.lastElementChild
+
     this.classList.toggle("cambio")
+    console.log(this)
     circle.classList.toggle("cambio--icon--circle")
     check.classList.toggle("cambio--icon--check")
 }
