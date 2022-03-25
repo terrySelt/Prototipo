@@ -167,9 +167,11 @@ labels_inputs.forEach(label_input => {
         const button = div.nextElementSibling //button
         const main = div.parentElement //main
         const header = main.previousElementSibling
-    
-        button.style.display = "block"
-        header.style.display = "block"
+        if(window.innerWidth < 600){
+            button.style.display = "block"
+            header.style.display = "block"
+        }
+        
     }
 
     label_input.onfocus = function() {
@@ -178,11 +180,11 @@ labels_inputs.forEach(label_input => {
         const button = div.nextElementSibling //button
         const main = div.parentElement //main
         const header = main.previousElementSibling
-    
-        button.style.display = "none"
-        header.style.display = "none"
+        if(window.innerWidth < 600){
+            button.style.display = "none"
+            header.style.display = "none"
+        }
     }
-
 })
 
 const desktops_as = document.querySelectorAll(".new--maintenance--desktop--a")
