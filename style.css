@@ -564,6 +564,10 @@ hr {
     color: #c6c2b9;
 }
 
+.display {
+    display: none;
+}
+
 @media (min-width: 600px) {
 
     .search--ficha--i--menu {

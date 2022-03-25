@@ -157,3 +157,30 @@ buttons.forEach(button => {
     button.addEventListener("click", cambio_de_color)
 })
 
+const labels_inputs = document.querySelectorAll(".new--maintenance--label--input")
+
+labels_inputs.forEach(label_input => {
+
+    label_input.onblur = function(){
+        const select = this.parentElement //selector
+        const div = select.parentElement //div
+        const button = div.nextElementSibling //button
+        const main = div.parentElement //main
+        const header = main.previousElementSibling
+    
+        button.style.display = "block"
+        header.style.display = "block"
+    }
+
+    label_input.onfocus = function() {
+        const select = this.parentElement //selector
+        const div = select.parentElement //div
+        const button = div.nextElementSibling //button
+        const main = div.parentElement //main
+        const header = main.previousElementSibling
+    
+        button.style.display = "none"
+        header.style.display = "none"
+    }
+
+})
