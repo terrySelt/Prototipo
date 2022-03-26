@@ -198,3 +198,22 @@ desktops_as.forEach(desktop_a => {
         this.style.borderBottom = "2px solid #f5f3f4"
     }
 })
+
+/*Record*/
+
+const buttons_pdf = document.querySelectorAll(".generate--pdf")
+
+const generate_pdf = function(evento){
+    const section_record = this.parentElement
+    const object_pdf = section_record.nextElementSibling
+    const section_detalle = object_pdf.nextElementSibling
+    object_pdf.style.display = "block"
+    //console.log(object_pdf)
+    //html2pdf()
+    //.from(section_detalle)
+    //.save()
+}
+
+buttons_pdf.forEach(button_pdf => {
+    button_pdf.addEventListener("click", generate_pdf)
+})

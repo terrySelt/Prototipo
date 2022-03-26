@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="record--body">
+    <header class="new--maintenance--header">
+        <nav>
+            <ul class="new--maintenance--movile">
+                <li><a href="new_maintenance.html"><i class="fas fa-screwdriver"></i></a></li>
+                <li><a href="new_maintenance.html"><i class="fas fa-cog"></i></a></li>
+                <li><a href="new_maintenance.html"><i class="fas fa-bug"></i></a></li>
+                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                <li><a href="record.html"><i class="fas fa-file-alt"></i></a></li>
+            </ul>
+            <ul class="new--maintenance--desktop">
+                <li><a href="#" class="new--maintenance--desktop--a">Mantenimiento</a></li>
+                <li><a href="#" class="new--maintenance--desktop--a">Caracteristicas</a></li>
+                <li><a href="record.html" class="new--maintenance--desktop--a">Historial</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="record-main">
+        <section class="record--section" id="record--section">
+            <h2>Historial de Mantenimiento</h2>
+            <button class="record--btn--primary generate--pdf">01/02/2022 08:00:00<i class="fas fa-calendar-check"></i></button>
+            <button class="record--btn--primary generate--pdf">02/02/2022 09:00:00<i class="fas fa-calendar-check"></i></button>
+            <button class="record--btn--primary generate--pdf">03/02/2022 10:00:00<i class="fas fa-calendar-check"></i></button>
+            <button class="record--btn--primary generate--pdf">04/02/2022 11:00:00<i class="fas fa-calendar-check"></i></button>
+            <button class="record--btn--primary generate--pdf">05/02/2022 12:00:00<i class="fas fa-calendar-check"></i></button>
+            <button class="record--btn--primary generate--pdf">07/02/2022 15:00:00<i class="fas fa-calendar-check"></i></button>
+            <button class="record--btn--primary generate--pdf">08/02/2022 16:00:00<i class="fas fa-calendar-check"></i></button>
+            <button class="record--btn--primary generate--pdf">09/02/2022 17:00:00<i class="fas fa-calendar-check"></i></button>
+            <button class="record--btn--primary generate--pdf">10/02/2022 08:00:00<i class="fas fa-calendar-check"></i></button>
+            <button class="record--btn--primary generate--pdf">11/02/2022 09:00:00<i class="fas fa-calendar-check"></i></button>
+        </section>
+        <object class="pdfview" type="application/pdf" data="./pdf/file (4).pdf"></object>
+        <section class="record--detalle--de--mantenimiento" id="record--detalle--de--mantenimiento">
+            <div>
+                <h2>Mantenimiento Preventivo</h2>
+                <button class="record--btn--primary--detail">Desarmado de equipo<i class="fas fa-check"></i></button>
+                <button class="record--btn--primary--detail">Limpieza de Tarjeta Madre<i class="fas fa-check"></i></button>
+                <button class="record--btn--primary--detail">Limpieza de RAM<i class="fas fa-check"></i></button>
+                <button class="record--btn--primary--detail">Limpieza de cables y conectores<i class="fas fa-check"></i></button>
+                <button class="record--btn--primary--detail">Limpieza de Tarjeta de Video<i class="fas fa-check"></i></button>
+                <button class="record--btn--primary--detail">Limpieza de fuente de alimenitación<i class="fas fa-check"></i></button>
+                <button class="record--btn--primary--detail">Cambio de pasta térmica<i class="fas fa-check"></i></button>
+            </div>
+            <div>
+                <h2>Mantenimiento lógico</h2>
+                <button class="record--btn--primary--detail">Instalación S.O.<i class="fas fa-check"></i></button>
+                <button class="record--btn--primary--detail">Instalación Office<i class="fas fa-check"></i></button>
+                <button class="record--btn--primary--detail">Instalación drivers<i class="fas fa-check"></i></button>
+                <label for="utilitarios">Instalación de Utilitarios</label><br>
+                <input type="text" id="utilitarios" class="record--label--input--detail"><br>
+                <button class="record--btn--primary--detail">Instalalción de Antivirus<i class="fas fa-check"></i></button>
+                <label for="software_aplicacion">Instalación de software de aplicación</label><br>
+                <input type="text" id="software_aplicacion" class="record--label--input--detail"><br>
+            </div>
+            <div>
+                <h2>Mantenimiento Correctivo</h2>
+                <label for="causas">Causas</label><br>
+                <input type="text" id="causas" class="record--label--input--detail"><br>
+                <label for="conclusion">Conclusión</label><br>
+                <input type="text" id="conclusion" class="record--label--input--detail">
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
