@@ -208,7 +208,6 @@ const generate_pdf = function(evento){
     const object_pdf = section_record.nextElementSibling
     const section_detalle = object_pdf.nextElementSibling
     object_pdf.style.display = "block"
-    //console.log(object_pdf)
     //html2pdf()
     //.from(section_detalle)
     //.save()

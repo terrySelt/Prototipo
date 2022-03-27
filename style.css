@@ -619,10 +619,15 @@ hr {
 
 .pdfview {
     display: none;
-    width: 98%;
+    width: 90%;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.generate--pdf a {
+    color: var(--dark--gray--d);
+    width: 100%;
 }
 
 .record--detalle--de--mantenimiento {
