@@ -199,6 +199,27 @@ desktops_as.forEach(desktop_a => {
     }
 })
 
+function desplegar_menu_home(){
+
+    var ul = document.getElementById("menu--home")
+    var menu = window.getComputedStyle(ul).display
+
+    if(menu === 'none'){
+        ul.style.display = "flex"
+    }
+
+}
+
+function desaparecer_menu_home(){
+    var ul = document.getElementById("menu--home")
+    var menu = window.getComputedStyle(ul).display
+
+    if(menu === "flex"){
+        ul.style.display = "none"
+    }
+}
+
+
 /*Record*/
 
 const buttons_pdf = document.querySelectorAll(".generate--pdf")

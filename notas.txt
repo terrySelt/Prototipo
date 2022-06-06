@@ -1,0 +1,19 @@
+HEX : #030708 negro
+RGB : 3, 7, 8
+HSL  : 192, 45%, 2%
+
+HEX : #746f6b negro oscuro
+RGB : 116, 111, 107
+HSL  : 26, 4%, 43%
+
+HEX : #c6c2b9 negro claro
+RGB : 198, 194, 185
+HSL  : 41, 10%, 75%
+
+HEX : #f5f3f4 claro
+RGB : 245, 243, 244
+HSL  : 329, 9%, 95%
+
+HEX : #ffffff blanco
+RGB : 255, 255, 255
+HSL  : 360, 0%, 100%
