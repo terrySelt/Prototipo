@@ -237,3 +237,15 @@ const generate_pdf = function(evento){
 buttons_pdf.forEach(button_pdf => {
     button_pdf.addEventListener("click", generate_pdf)
 })
+
+/*settings*/
+
+//function sub_buttons() {
+  //  var sub_butt = document.getElementById(".sub--buttons")
+    //console.log(sub_butt)
+    //var butto = window.getComputedStyle(sub_butt).display
+
+    //if(butto==="none"){
+      //  sub_butt.style.display = "flex"
+    //}
+//}

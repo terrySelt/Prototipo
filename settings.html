@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="settings--body">
     <header class="search--ficha--header">
         <h2>Configuraciones Generales</h2>
         <i class="fas fa-ellipsis-v search--ficha--i--menu" onclick="desplegar_menu()"></i>
@@ -19,13 +19,30 @@
             <hr>
             <ul>
                 <li><a href="search_ficha_tecnica.html"><i class="fas fa-clipboard icon"></i>Fichas Tecnicas</a></li>
-                <li><a href="#"><i class="fas fa-desktop icon"></i>Computadoras</a></li>
-                <li><a href="#"><i class="fas fa-university icon"></i>Laboratorios</a></li>
-                <li><a href="#"><i class="fas fa-user icon"></i>Auxiliares</a></li>
+                <li><a href="computers.html"><i class="fas fa-desktop icon"></i>Computadoras</a></li>
+                <li><a href="laboratories.html"><i class="fas fa-university icon"></i>Laboratorios</a></li>
+                <li><a href="helpers.html"><i class="fas fa-user icon"></i>Auxiliares</a></li>
                 <li><a href="settings.html"><i class="fas fa-cogs icon"></i>Configuraciones</a></li>
             </ul>
         </nav>
     </header>
+    <main class="settings--main">
+        <section class="settings--section">
+            <div class="settings--section--div">
+                <button class="settings--section--buttons"><i class="fas fa-star"></i></button>
+                <label for="">Carateristicas</label>
+            </div>
+            <div class="settings--section--div settings--section--div--right" >
+                <button class="settings--section--buttons" onclick="sub_buttons()"><i class="fas fa-clipboard-list"></i></button>
+                <label for="">Mantenimiento</label>
+                <div class="sub--buttons" id="sub--buttons">
+                    <button class="settings--section--buttons--mantenimiento up--button"><i class="fas fa-screwdriver"></i></button>
+                    <button class="settings--section--buttons--mantenimiento center--button"><i class="fas fa-cog"></i></button>
+                    <button class="settings--section--buttons--mantenimiento down--button"><i class="fas fa-bug"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="./main.js"></script>
 </body>
 </html>

@@ -460,7 +460,7 @@ hr {
 }
 
 .new--maintenance--movile li a i {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .menu--home { 
@@ -468,7 +468,7 @@ hr {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    right: 0px;
+    right: 10px;
     bottom: 50px;
     width: 50px;
     height: 200px;
@@ -488,7 +488,7 @@ hr {
 
 .menu--home .icon {
     display: flex;
-    font-size: 20px;
+    font-size: 25px;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -672,6 +672,124 @@ hr {
 .record--detalle--de--mantenimiento {
     display: none;
 }
+
+/*helpers*/
+
+.search--ficha--slider--article--helpers{
+    position: relative;
+    scroll-snap-align: center;
+    background-color: var(--dark--gray--m);
+    color: var(--text--input--field);
+    width: 70%;
+    height: auto;
+    max-width: 300px;
+    min-width: 260px;
+    padding: 8px;
+    margin: auto 0;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(89, 73, 38, 0.16);
+}
+
+.search--ficha--slider--article--helpers h3{
+    display: inline;
+    font-size: var(--md);
+}
+
+.perfil {
+    display: block;
+    margin: 10px auto 0;
+    width: 90%;
+    height: auto;
+    border: 0;
+    border-radius: 50%;
+}
+
+.info{
+    float: right;
+    font-size: 25px;
+    margin: 0;
+}
+
+
+/*settings*/
+.settings--main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.settings--section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 200px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.settings--section--div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+.settings--section--div--right {
+    position: relative;
+}
+
+.settings--section--buttons {
+    border: none;
+    border-radius: 50%;
+    padding: 6px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--light--gray--d);
+    color: var(--text--input--field);
+    cursor: pointer;
+
+}
+
+.settings--section--div label{
+    font-size: var(--sm);
+    color: var(--dark--gray--d);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.sub--buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    right: -50px;
+    width: 100px;
+    height: 170px;
+}
+
+.settings--section--buttons--mantenimiento {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--light--gray--d);
+    color: var(--text--input--field);
+    cursor: pointer;
+}
+
+.down--button,
+.up--button {
+    margin-right: 20px;
+}
+
+
 
 @media (min-width: 600px) {
 
@@ -875,5 +993,10 @@ hr {
         font-size: var(--sm);
         margin-bottom: 15px;
         background-color: white;
+    }
+
+    /*setting*/
+    .settings--section {
+        width: 40%;
     }
 }
