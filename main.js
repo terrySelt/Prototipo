@@ -85,8 +85,7 @@ function cerrar2(){
     var div_qr = document.getElementById("search--ficha--slider--i--div2")
     var i_qr = document.getElementById("search--ficha--slider--i2")
     div_qr.style.display = "none"
-    i_qr.style.display = "block"
-    
+    i_qr.style.display = "block"   
 }
 
 function desplegar_qr3(){
@@ -219,6 +218,31 @@ function desaparecer_menu_home(){
     }
 }
 
+/*caractersiticas*/
+function desplegar_qr_caracteristicas(){
+
+    var div_qr = document.getElementById("search--ficha--slider--i--div")
+    var i_qr = document.getElementById("search--ficha--slider--i")
+    var article = document.getElementById("caractersiticas--article")
+    var div_qr_display = window.getComputedStyle(div_qr).display
+
+    if(div_qr_display === "none"){
+        div_qr.style.display = "block"
+        i_qr.style.display = "none"
+        article.style.height = "250px"
+    }
+}
+
+function cerrar_caracteristicas(){
+
+    var div_qr = document.getElementById("search--ficha--slider--i--div")
+    var i_qr = document.getElementById("search--ficha--slider--i")
+    var article = document.getElementById("caractersiticas--article")
+    div_qr.style.display = "none"
+    i_qr.style.display = "block"
+    article.style.height = "205px"
+    
+}
 
 /*Record*/
 

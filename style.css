@@ -677,6 +677,71 @@ hr {
     display: none;
 }
 
+/*caracteristicas*/
+.caracteristicas--header {
+    position: fixed;
+    bottom: 0;
+}
+.caracteristicas--main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+}
+
+.caracteristicas--main h2 {
+    margin: 20px 10px 10px 10px;
+}
+
+.caracteristicas--main h3 {
+    margin-top: 20px;
+    font-size: var(--md);
+}
+
+.caractersiticas--article {
+    height: 205px;
+}
+
+.caractersiticas--article h3{
+    margin-top: 0;
+}
+.caracteristicas--box--title {
+    display: flex;
+    align-items: center;
+    color: var(--dark--gray--d);
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid var(--light--gray--l);
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: var(--sm);
+}
+
+.caracteristicas--box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--dark--gray--d);
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid var(--light--gray--l);
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: var(--sm);
+}
+
+.caracteristicas--box div {
+    width: 50%;
+}
+
+
 /*helpers*/
 
 .search--ficha--slider--article--helpers{
@@ -923,6 +988,16 @@ hr {
         right: 10px;
         bottom: 10px;
         width: 200px;
+    }
+
+    /*caractersiticas*/
+    .caractersiticas--body {
+        display: grid;
+        grid-template-columns: 0.6fr 3.4fr;
+    }
+
+    .caracteristicas--main h2 {
+        font-size: var(--lg);
     }
 
     /*Record*/

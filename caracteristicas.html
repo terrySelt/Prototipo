@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="caractersiticas--body">
+    <header class="new--maintenance--header caracteristicas--header">
+        <nav>
+            <ul class="new--maintenance--movile">
+                <li><a href="#preventivo"><i class="fas fa-screwdriver icon"></i></a></li>
+                <li><a href="record.html"><i class="fas fa-file-alt icon"></i></a></li>
+                <li><i class="fas fa-ellipsis-v menu--menu--home icon" onclick="desplegar_menu_home()"></i></li>
+                <ul class="menu--home" id="menu--home">
+                    <li><a href="settings.html"><i class="fas fa-cogs icon"></i></a></li>
+                    <li><a href="helpers.html"><i class="fas fa-user icon"></i></a></li>
+                    <li><a href="laboratories.html"><i class="fas fa-university icon"></i></a></li>
+                    <li><a href="computers.html"><i class="fas fa-desktop icon"></i></a></li>
+                    <li><a href="search_ficha_tecnica.html"><i class="fas fa-clipboard icon"></i></a></li>
+                </ul>
+            </ul>
+            <ul class="new--maintenance--desktop">
+                <li><a href="new_maintenance.html" class="new--maintenance--desktop--a">Mantenimiento</a></li>
+                <li><a href="caracteristicas.html" class="new--maintenance--desktop--a">Caracteristicas</a></li>
+                <li><a href="record.html" class="new--maintenance--desktop--a">Historial</a></li>
+                <li><a href="search_ficha_tecnica.html">Fichas Tecnicas</a></li>
+                <li><a href="computers.html">Computadoras</a></li>
+                <li><a href="laboratories.html">Laboratorios</a></li>
+                <li><a href="helpers.html">Auxiliares</a></li>
+                <li><a href="settings.html">Configuraciones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="caracteristicas--main">
+        <h2>Carateristicas</h2>
+        <article class="search--ficha--slider--article caractersiticas--article" id="caractersiticas--article">
+            <div class="search--ficha--slider--i--div" id="search--ficha--slider--i--div">
+                <i class="fas fa-times" onclick="cerrar_caracteristicas()"></i>
+                <img src="./assets/img/qr.png" alt="imagen Qr">
+            </div>
+            <h3>0012345</h3>
+            <i class="fas fa-qrcode search--ficha--slider--i" id="search--ficha--slider--i" onclick="desplegar_qr_caracteristicas()"></i>
+            <img class="img-computer" src="./assets/img/scomputer.jpg" alt="Imagen de la computadora">
+        </article>
+        <h3>Especificaciones tecnicas</h3>
+        <div class="caracteristicas--box--title">
+            Modelo
+        </div>
+        <div class="caracteristicas--box">
+            <div>Tipo</div>
+            <div>Desktop</div>
+        </div>
+        <div class="caracteristicas--box">
+            <div>Marca</div>
+            <div>Asus</div>
+        </div>
+        <div class="caracteristicas--box">
+            <div>Serie</div>
+            <div>ExpertCenter</div>
+        </div>
+        <div class="caracteristicas--box">
+            <div>Modelo</div>
+            <div>D700SA</div>
+        </div>
+        <div class="caracteristicas--box">
+            <div>Número de Parte</div>
+            <div>D700SA-i78G1TWP-01</div>
+        </div>
+        <div class="caracteristicas--box--title">
+            Procesador
+        </div>
+        <div class="caracteristicas--box">
+            <div>Marca</div>
+            <div>Intel</div>
+        </div>
+        <div class="caracteristicas--box">
+            <div>Línea</div>
+            <div>Core i7</div>
+        </div>
+        <div class="caracteristicas--box">
+            <div>Modelo</div>
+            <div>10700</div>
+        </div>
+        <div class="caracteristicas--box">
+            <div>Generación</div>
+            <div>10ma Generación</div>
+        </div>
+        <div class="caracteristicas--box">
+            <div>Velocidad</div>
+            <div>(hasta 4.70 GHz)</div>
+        </div>
+        <div class="caracteristicas--box">
+            <div>Cache</div>
+            <div>16 MB</div>
+        </div>
+        <div class="caracteristicas--box--title">
+            Memoria
+        </div>
+        <div class="caracteristicas--box">
+            <div>Capacidad</div>
+            <div>8GB</div>
+        </div>
+        <div class="caracteristicas--box">
+            <div>Tipo</div>
+            <div>DDR4</div>
+        </div>
+        <div class="caracteristicas--box--title">
+            Disco Duro
+        </div>
+        <div class="caracteristicas--box">
+            <div>Capacidad</div>
+            <div>1TB</div>
+        </div>
+        <div class="caracteristicas--box--title">
+            Gráficos
+        </div>
+        <div class="caracteristicas--box">
+            <div>Serie</div>
+            <div>UHD Graphics 630</div>
+        </div>
+        <div class="caracteristicas--box">
+            <div>Tipo</div>
+            <div>Video Integrado</div>
+        </div>
+        <div class="caracteristicas--box--title">
+            Audio
+        </div>
+        <div class="caracteristicas--box">
+            <div>Sonido</div>
+            <div>Audio de alta definición</div>
+        </div>
+        <div class="caracteristicas--box--title">
+            Puertos Frontales
+        </div>
+        <div class="caracteristicas--box">
+            <div>USB 3.0</div>
+            <div>6</div>
+        </div>
+        <div class="caracteristicas--box">
+            <div>Salida para Audífono</div>
+            <div>SI</div>
+        </div>
+        <div class="caracteristicas--box">
+            <div>Entrada de Micrófono</div>
+            <div>SI</div>
+        </div>
+        <div class="caracteristicas--box--title">
+            Comunicación
+        </div>
+        <div class="caracteristicas--box">
+            <div>Red</div>
+            <div>10/100/1000 Mbps</div>
+        </div>
+        <div class="caracteristicas--box--title">
+            Energía	
+        </div>
+        <div class="caracteristicas--box">
+            <div>Fuente de Poder</div>
+            <div>180 W</div>
+        </div>
+        <div class="caracteristicas--box--title">
+            Sistema Operativo
+        </div>
+        <div class="caracteristicas--box">
+            <div>Sistema Operativo</div>
+            <div>Windows 10 Pro (64 Bits)</div>
+        </div>
+        <div class="caracteristicas--box--title">
+            Especificaciones Físicas
+        </div>
+        <div class="caracteristicas--box">
+            <div>Dimensiones</div>
+            <div>9.50 x 29.28 x 34.00 cm</div>
+        </div>
+        <div class="caracteristicas--box">
+            <div>Peso</div>
+            <div>5 kg</div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
