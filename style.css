@@ -463,6 +463,10 @@ hr {
     font-size: 20px;
 }
 
+.new--maintenance--movile li i {
+    font-size: 20px;
+}
+
 .menu--home { 
     position: absolute;
     display: none;
