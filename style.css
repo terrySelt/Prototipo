@@ -793,6 +793,10 @@ hr {
     margin-right: 20px;
 }
 
+.icon--setting {
+    font-size: 20px;
+}
+
 
 
 @media (min-width: 600px) {
